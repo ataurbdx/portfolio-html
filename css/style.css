@@ -664,6 +664,20 @@ Version: 1.00
 ===========================*/
 
 /*===========================
+    4. GALLERY PART CSS START
+===========================*/
+
+.gallery_btn_wrap{
+  /* background: red; */
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+
+/*===========================
+    4. GALLERY PART CSS END
+===========================*/
+
+/*===========================
     4. CONTACT PART CSS START
 ===========================*/
 

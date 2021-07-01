@@ -33,6 +33,9 @@
   <link rel="stylesheet" href="css/venobox.css">
 
   <!--====== Default css ======-->
+  <link type="text/css" rel="stylesheet" href="css/lightgallery-bundle.css" />
+
+  <!--====== Default css ======-->
   <link rel="stylesheet" href="css/default.css" />
 
   <!--====== Common css ======-->
@@ -1892,29 +1895,139 @@
           <section class="gallery_area" id="gallery">
             <div class="card">
               <div class="card-header p-0 d-flex justify-content-between align-items-center">
-                <h2 class="section_title">Photo Gallery</h2>
+                <h2 class="section_title">MY Gallery</h2>
                 <button class="action_icon card_action py-15 border-0 bg-transparent" value="14"><i
                     class="fas fa-angle-down rotate_up"></i></button>
               </div>
               <div class="card-body p-15 section_body_14">
                 
                 <div class="row">
-                  <div class="col-md-12 m-auto text-center">
-                    <div class="btn-group">
+                  <div class="col-md-12 text-center">
+                    <div class="btn-group d-flex flex-wrap">
                       <button class="gallery_btn btn active" type="button" onclick="openGallery('All_Gallery')"
                         id="active_gallery">All</button>
-                      <button class="gallery_btn btn" type="button"
-                        onclick="openGallery('Professional_Gallery')">Professional</button>
-                      <button class="gallery_btn btn" type="button" onclick="openGallery('Other_Gallery')">Others</button>
+                      <button class="gallery_btn btn" type="button" onclick="openGallery('Album_Gallery')">Albums</button>
                     </div>
                   </div>
                 </div>
 
                 <div class="gallery_wrap">
                   <div id="All_Gallery" class="gallery_item">
+                    <div class="row" id="LightGallery_All_Gallery">
 
-                    <div class="single_gallery overflow-hidden mt-30">
+                      <a href="images/Banner-slider/slide-1.jpg" data-lg-size="1600-2400" class="col-md-4 mt-30 single_gallery overflow-hidden">
+                        <img src="images/Banner-slider/slide-1.jpg" alt="">
+                      </a>
+                      <a href="images/Banner-slider/slide-2.jpg" data-lg-size="1600-2400" class="col-md-4 mt-30 single_gallery overflow-hidden">
+                        <img src="images/Banner-slider/slide-2.jpg" alt="">
+                      </a>
+                      <a href="images/Banner-slider/slide-1.jpg" data-lg-size="1600-2400" class="col-md-4 mt-30 single_gallery overflow-hidden">
+                        <img src="images/Banner-slider/slide-1.jpg" alt="">
+                      </a>
+                      <a href="images/Banner-slider/slide-2.jpg" data-lg-size="1600-2400" class="col-md-4 mt-30 single_gallery overflow-hidden">
+                        <img src="images/Banner-slider/slide-2.jpg" alt="">
+                      </a>
+                      <a href="images/Banner-slider/slide-1.jpg" data-lg-size="1600-2400" class="col-md-4 mt-30 single_gallery overflow-hidden">
+                        <img src="images/Banner-slider/slide-1.jpg" alt="">
+                      </a>
+                      <a href="images/Banner-slider/slide-2.jpg" data-lg-size="1600-2400" class="col-md-4 mt-30 single_gallery overflow-hidden">
+                        <img src="images/Banner-slider/slide-2.jpg" alt="">
+                      </a>
                       
+                    </div>
+                  </div>
+
+                  <div id="Album_Gallery" class="gallery_item">
+
+                    <div class="btn_scroll gallery_btn_wrap text-center mt-15">
+                      <div class="btn-group">
+                        <button class="album_button btn btn-sm active" type="button" onclick="openAlbum('Tour_Album')" id="active_album">Tour</button>
+                        <button class="album_button btn btn-sm" type="button" onclick="openAlbum('Blog_Album')">Blog</button>
+                        <button class="album_button btn btn-sm" type="button" onclick="openAlbum('Video_Album')">Video</button>
+                      </div>
+                    </div>
+
+                    <div class="album_wrap">
+
+                      <div id="Tour_Album" class="album_item">
+                        <div class="single_album overflow-hidden">
+                          <div class="row" id="LightGallery_Tour_Album">
+
+                            <a href="images/Banner-slider/slide-2.jpg" data-lg-size="1600-2400" class="col-md-4 mt-30 single_gallery overflow-hidden">
+                              <img src="images/Banner-slider/slide-2.jpg" alt="">
+                            </a>
+                            <a href="images/Banner-slider/slide-1.jpg" data-lg-size="1600-2400" class="col-md-4 mt-30 single_gallery overflow-hidden">
+                              <img src="images/Banner-slider/slide-1.jpg" alt="">
+                            </a>
+                            <a href="images/Banner-slider/slide-2.jpg" data-lg-size="1600-2400" class="col-md-4 mt-30 single_gallery overflow-hidden">
+                              <img src="images/Banner-slider/slide-2.jpg" alt="">
+                            </a>
+                            <a href="images/Banner-slider/slide-1.jpg" data-lg-size="1600-2400" class="col-md-4 mt-30 single_gallery overflow-hidden">
+                              <img src="images/Banner-slider/slide-1.jpg" alt="">
+                            </a>
+                            <a href="images/Banner-slider/slide-2.jpg" data-lg-size="1600-2400" class="col-md-4 mt-30 single_gallery overflow-hidden">
+                              <img src="images/Banner-slider/slide-2.jpg" alt="">
+                            </a>
+                            <a href="images/Banner-slider/slide-1.jpg" data-lg-size="1600-2400" class="col-md-4 mt-30 single_gallery overflow-hidden">
+                              <img src="images/Banner-slider/slide-1.jpg" alt="">
+                            </a>
+                            
+                          </div>
+                        </div>
+                      </div>
+                      <div id="Blog_Album" class="album_item">
+                        <div class="single_album overflow-hidden">
+                          <div class="row" id="LightGallery_Blog_Album">
+
+                            <a href="images/Banner-slider/slide-2.jpg" data-lg-size="1600-2400" class="col-md-4 mt-30 single_gallery overflow-hidden">
+                              <img src="images/Banner-slider/slide-2.jpg" alt="">
+                            </a>
+                            <a href="images/Banner-slider/slide-1.jpg" data-lg-size="1600-2400" class="col-md-4 mt-30 single_gallery overflow-hidden">
+                              <img src="images/Banner-slider/slide-1.jpg" alt="">
+                            </a>
+                            <a href="images/Banner-slider/slide-2.jpg" data-lg-size="1600-2400" class="col-md-4 mt-30 single_gallery overflow-hidden">
+                              <img src="images/Banner-slider/slide-2.jpg" alt="">
+                            </a>
+                            <a href="images/Banner-slider/slide-1.jpg" data-lg-size="1600-2400" class="col-md-4 mt-30 single_gallery overflow-hidden">
+                              <img src="images/Banner-slider/slide-1.jpg" alt="">
+                            </a>
+                            <a href="images/Banner-slider/slide-2.jpg" data-lg-size="1600-2400" class="col-md-4 mt-30 single_gallery overflow-hidden">
+                              <img src="images/Banner-slider/slide-2.jpg" alt="">
+                            </a>
+                            <a href="images/Banner-slider/slide-1.jpg" data-lg-size="1600-2400" class="col-md-4 mt-30 single_gallery overflow-hidden">
+                              <img src="images/Banner-slider/slide-1.jpg" alt="">
+                            </a>
+                            
+                          </div>
+                        </div>
+                      </div>
+                      <div id="Video_Album" class="album_item">
+                        <div class="single_album overflow-hidden">
+                          <div class="row" id="LightGallery_Video_Album">
+
+                            <a href="images/Banner-slider/slide-2.jpg" data-lg-size="1600-2400" class="col-md-4 mt-30 single_gallery overflow-hidden">
+                              <img src="images/Banner-slider/slide-2.jpg" alt="">
+                            </a>
+                            <a href="images/Banner-slider/slide-1.jpg" data-lg-size="1600-2400" class="col-md-4 mt-30 single_gallery overflow-hidden">
+                              <img src="images/Banner-slider/slide-1.jpg" alt="">
+                            </a>
+                            <a href="images/Banner-slider/slide-2.jpg" data-lg-size="1600-2400" class="col-md-4 mt-30 single_gallery overflow-hidden">
+                              <img src="images/Banner-slider/slide-2.jpg" alt="">
+                            </a>
+                            <a href="images/Banner-slider/slide-1.jpg" data-lg-size="1600-2400" class="col-md-4 mt-30 single_gallery overflow-hidden">
+                              <img src="images/Banner-slider/slide-1.jpg" alt="">
+                            </a>
+                            <a href="images/Banner-slider/slide-2.jpg" data-lg-size="1600-2400" class="col-md-4 mt-30 single_gallery overflow-hidden">
+                              <img src="images/Banner-slider/slide-2.jpg" alt="">
+                            </a>
+                            <a href="images/Banner-slider/slide-1.jpg" data-lg-size="1600-2400" class="col-md-4 mt-30 single_gallery overflow-hidden">
+                              <img src="images/Banner-slider/slide-1.jpg" alt="">
+                            </a>
+                            
+                          </div>
+                        </div>
+                      </div>
+
                     </div>
 
                   </div>
@@ -2253,6 +2366,12 @@
 
   <!--====== Slick Slider js ======-->
   <script src="js/slick.min.js"></script>
+  <!-- unfortunately slick slider do not work without mixitup script  -->
+
+  <!--====== Lightgallery js ======-->
+  <script src="js/lightgallery.min.js"></script>
+  <script src="js/lg-thumbnail.umd.js"></script>
+  <script src="js/lg-zoom.umd.js"></script>
 
   <!--====== Venobox js ======-->
   <script src="js/venobox.js"></script>

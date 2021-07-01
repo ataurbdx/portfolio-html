@@ -32,7 +32,8 @@ window.addEventListener("scroll", () => {
   sections.forEach((section) => {
     const sectionTop = section.offsetTop;
     const sectionHeight = section.clientHeight;
-    if (pageYOffset >= sectionTop - 65) {
+    if (pageYOffset >= sectionTop - sectionHeight / 3 ) {
+    // if (pageYOffset >= sectionTop - 65) {
       current = section.getAttribute("id");
     }
   });
@@ -281,6 +282,48 @@ $(document).ready(function() {
     });
     //Slick Slider js Ends
 
+    //gallery area js Start
+    $('.gallery_btn').on('click', function () {
+        $('.gallery_btn').removeClass('active');
+        $(this).addClass('active');
+    });
+    //gallery area js Ends
+    
+    //gallery album area js Start
+    $('.album_button').on('click', function () {
+        $('.album_button').removeClass('active');
+        $(this).addClass('active');
+    });
+    //gallery album area js Ends
+
+    // //light gallery js Start
+    // jQuery("#lightgallery")
+    // .justifiedGallery({
+    //     captions: false,
+    //     lastRow: "hide",
+    //     rowHeight: 180,
+    //     margins: 5
+    // })
+    // .on("jg.complete", function () {
+    //     window.lightGallery(
+    //     document.getElementById("lightgallery"),
+    //     {
+    //         autoplayFirstVideo: false,
+    //         pager: true,
+    //         galleryId: "nature",
+    //         plugins: [lgZoom, lgThumbnail],
+    //         mobileSettings: {
+    //         controls: true,
+    //         showCloseIcon: true,
+    //         download: true,
+    //         rotate: true
+    //         }
+    //     }
+    //     );
+    // });
+
+    // //light gallery js Ends
+
 
 
 
@@ -331,5 +374,65 @@ function openExperience(Experience) {
 }
 document.getElementById("active_experience").click();
 //my experience js ends
+
+//gallery js start
+function openGallery(Gallery) {
+  var i, gallery_item;
+  gallery_item = document.getElementsByClassName("gallery_item");
+  for (i = 0; i < gallery_item.length; i++) {
+    gallery_item[i].style.display = "none";
+  }
+  document.getElementById(Gallery).style.display = "block";
+}
+document.getElementById("active_gallery").click();
+//gallery js ends
+
+//gallery js start
+function openAlbum(Album) {
+  var i, album_item;
+  album_item = document.getElementsByClassName("album_item");
+  for (i = 0; i < album_item.length; i++) {
+    album_item[i].style.display = "none";
+  }
+  document.getElementById(Album).style.display = "block";
+}
+document.getElementById("active_album").click();
+//gallery js ends
+
+//light gallery js starts
+lightGallery(document.getElementById('LightGallery_All_Gallery'), {
+    plugins: [lgZoom, lgThumbnail],
+    mode: 'fade',
+    speed: 500,
+    thumbnail: true,
+
+    // animateThumb: true,
+    // zoomFromOrigin: true,
+    // allowMediaOverlap: false,
+    // toggleThumb: true,
+
+});
+
+lightGallery(document.getElementById('LightGallery_Tour_Album'), {
+    plugins: [lgZoom, lgThumbnail],
+    mode: 'fade',
+    speed: 500,
+    thumbnail: true,
+});
+
+lightGallery(document.getElementById('LightGallery_Blog_Album'), {
+    plugins: [lgZoom, lgThumbnail],
+    mode: 'fade',
+    speed: 500,
+    thumbnail: true,
+});
+
+lightGallery(document.getElementById('LightGallery_Video_Album'), {
+    plugins: [lgZoom, lgThumbnail],
+    mode: 'fade',
+    speed: 500,
+    thumbnail: true,
+});
+//light gallery js ends
 
 
