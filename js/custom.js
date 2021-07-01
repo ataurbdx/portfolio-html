@@ -401,7 +401,7 @@ document.getElementById("active_album").click();
 
 //light gallery js starts
 lightGallery(document.getElementById('LightGallery_All_Gallery'), {
-    plugins: [lgZoom, lgThumbnail],
+    plugins: [lgZoom, lgThumbnail, lgShare],
     mode: 'fade',
     speed: 500,
     thumbnail: true,
@@ -414,21 +414,21 @@ lightGallery(document.getElementById('LightGallery_All_Gallery'), {
 });
 
 lightGallery(document.getElementById('LightGallery_Tour_Album'), {
-    plugins: [lgZoom, lgThumbnail],
+    plugins: [lgZoom, lgThumbnail, lgShare],
     mode: 'fade',
     speed: 500,
     thumbnail: true,
 });
 
 lightGallery(document.getElementById('LightGallery_Blog_Album'), {
-    plugins: [lgZoom, lgThumbnail],
+    plugins: [lgZoom, lgThumbnail, lgShare],
     mode: 'fade',
     speed: 500,
     thumbnail: true,
 });
 
 lightGallery(document.getElementById('LightGallery_Video_Album'), {
-    plugins: [lgZoom, lgThumbnail],
+    plugins: [lgZoom, lgThumbnail, lgShare],
     mode: 'fade',
     speed: 500,
     thumbnail: true,

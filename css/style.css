@@ -672,6 +672,9 @@ Version: 1.00
   overflow-x: scroll;
   scrollbar-width: none;
 }
+.single_gallery img{
+  border-radius: 10px;
+}
 
 /*===========================
     4. GALLERY PART CSS END
