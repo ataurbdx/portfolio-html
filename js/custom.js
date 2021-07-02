@@ -32,8 +32,8 @@ window.addEventListener("scroll", () => {
   sections.forEach((section) => {
     const sectionTop = section.offsetTop;
     const sectionHeight = section.clientHeight;
-    if (pageYOffset >= sectionTop - sectionHeight / 3 ) {
-    // if (pageYOffset >= sectionTop - 65) {
+    // if (pageYOffset >= sectionTop - sectionHeight / 3 ) {
+    if (pageYOffset >= sectionTop - 65) {
       current = section.getAttribute("id");
     }
   });
@@ -49,6 +49,15 @@ window.addEventListener("scroll", () => {
 
 $(document).ready(function() {
     // window.alert("Hi! Ataur");
+
+    $(".nav_toggler").click(function(){
+        $(".side_navbar").toggleClass("show");
+        $("body").toggleClass("overflow-hidden");
+    })
+    $(".side_navbar .nav-item").click(function(){
+        $(".side_navbar").removeClass("show");
+        $("body").removeClass("overflow-hidden");
+    })
 
     //=======================================
     //        1. HEADER JS START
@@ -201,13 +210,19 @@ $(document).ready(function() {
         dots: false,
         responsive: [
             {
-                breakpoint: 576,
+                breakpoint: 577,
                 settings: {
                     slidesToShow: 1
                 }
             },
             {
-                breakpoint: 768,
+                breakpoint: 769,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 993,
                 settings: {
                     slidesToShow: 2
                 }
@@ -267,13 +282,19 @@ $(document).ready(function() {
         dots: true,
         responsive: [
             {
-                breakpoint: 576,
+                breakpoint: 577,
                 settings: {
                     slidesToShow: 1
                 }
             },
             {
                 breakpoint: 768,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 993,
                 settings: {
                     slidesToShow: 2
                 }

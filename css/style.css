@@ -102,7 +102,7 @@ Version: 1.00
 
 
 .side_navbar{
-  /* background: red; */
+  background: var(--themeWhite);
   width: 300px;
   box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.3);
 
@@ -111,6 +111,7 @@ Version: 1.00
   position: fixed;
   /* left: 0; */
   /* top: 50px; */
+  /* transition: all .3s linear; */
 }
 .nav-item{
   margin: 1px 0;
