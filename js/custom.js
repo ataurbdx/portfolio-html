@@ -59,6 +59,14 @@ $(document).ready(function() {
         $("body").removeClass("overflow-hidden");
     })
 
+    //for tab screen
+    $(".side_navbar").hover(function(){
+        $(".side_navbar").toggleClass("nav-300");
+        $(".side_navbar .nav-item").toggleClass("w-100");
+        // $("body").toggleClass("overflow-hidden");
+    })
+
+
     //=======================================
     //        1. HEADER JS START
     //=======================================

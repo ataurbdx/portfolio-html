@@ -241,9 +241,7 @@ section {
 .rotate_up{
     transform: rotate(180deg);
 }
-.section_body{
-    /* display: none; */
-}
+
 .title_text {
     text-align: center;
     text-transform: uppercase;

@@ -89,9 +89,7 @@ Version: 1.00
 /*===========================
     1. MAIN BODY PART CSS START
 ===========================*/
-.main_body{
-  /* margin-top: 50px; */
-}
+
 .left_menu{
   /* height: calc(100vh - 50px); */
   overflow-y: auto;
@@ -115,6 +113,7 @@ Version: 1.00
 }
 .nav-item{
   margin: 1px 0;
+  width: 100%;
 }
 .nav-link{
   color: var(--themeBlack);

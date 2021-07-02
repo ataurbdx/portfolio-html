@@ -29,16 +29,11 @@ Version: 1.00
         width: 50px;
         overflow: hidden;
     }
-    .side_navbar:hover{
+    /* .side_navbar:hover, */
+    .nav-300{
         width: 300px;
         z-index: 9;
         overflow: scroll;
-    }
-    .side_navbar .nav-item {
-        width: 50px;
-    }
-    .side_navbar:hover .nav-item {
-        width: 100%;
     }
     .side_navbar .nav-link span{
         display: none;
@@ -63,18 +58,10 @@ Version: 1.00
         overflow: hidden;
     }
 
-    .side_navbar:hover {
+    .nav-300 {
         width: 300px;
         z-index: 9;
         overflow: scroll;
-    }
-
-    .side_navbar .nav-item {
-        width: 50px;
-    }
-
-    .side_navbar:hover .nav-item {
-        width: 100%;
     }
 
     .side_navbar .nav-link span {
@@ -123,8 +110,11 @@ Version: 1.00
         transform: translateX(0%);
         box-shadow: none;
     }
+    .logo{
+        padding-left: 0 !important;
+    }
     .logo_text{
-        display: none;
+        font-size: 20px !important;
     }
     .banner_text {
         width: 100%;
