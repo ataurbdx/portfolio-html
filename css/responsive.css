@@ -29,8 +29,7 @@ Version: 1.00
         width: 50px;
         overflow: hidden;
     }
-    /* .side_navbar:hover, */
-    .nav-300{
+    .side_navbar:hover{
         width: 300px;
         z-index: 9;
         overflow: scroll;
@@ -58,7 +57,7 @@ Version: 1.00
         overflow: hidden;
     }
 
-    .nav-300 {
+    .side_navbar:hover {
         width: 300px;
         z-index: 9;
         overflow: scroll;

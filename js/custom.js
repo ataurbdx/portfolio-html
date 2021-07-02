@@ -57,14 +57,14 @@ $(document).ready(function() {
     $(".side_navbar .nav-item").click(function(){
         $(".side_navbar").removeClass("show");
         $("body").removeClass("overflow-hidden");
+        
     })
 
     //for tab screen
-    $(".side_navbar").hover(function(){
-        $(".side_navbar").toggleClass("nav-300");
-        $(".side_navbar .nav-item").toggleClass("w-100");
-        // $("body").toggleClass("overflow-hidden");
-    })
+    // $(".side_navbar").hover(function(){
+    //     $(".side_navbar").toggleClass("nav-300");
+    //     $(".side_navbar .nav-item").toggleClass("w-100");
+    // })
 
 
     //=======================================
