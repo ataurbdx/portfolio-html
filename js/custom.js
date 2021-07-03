@@ -88,8 +88,8 @@ $(document).ready(function() {
         strings: [
     'Web Designer',
     'Web Developer',
-    'Graphics Designer',
-    'Professional Singer',
+    'Graphic Designer',
+    'Islamic Singer',
     ],
         stringsElement: null,
         typeSpeed: 100,
